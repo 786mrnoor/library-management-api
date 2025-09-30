@@ -5,8 +5,8 @@ export default async function removeBook(req, res) {
     const Book = await BookModel.findByIdAndDelete(req.params.id);
     if (!Book)
       return res.status(404).json({ success: false, message: "Not found" });
-    res.json({ success: true, message: "Book deleted" });
+    res.status(200).json({ success: true, message: "Book deleted" });
   } catch (err) {
-    res.status(400).json({ success: false, message: err.message });
+    res.status(500).json({ success: false, message: err.message });
   }
 }

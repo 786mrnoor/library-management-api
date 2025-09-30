@@ -7,6 +7,7 @@ import removeBook from "../controllers/book/remove-book.js";
 
 const bookRouter = Router();
 
+// route: /books
 bookRouter.get("/", getBooks);
 bookRouter.get("/:id", getBookById);
 bookRouter.post("/", addBook);

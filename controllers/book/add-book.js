@@ -5,6 +5,6 @@ export default async function addBook(req, res) {
     const book = await BookModel.create(req.body);
     res.status(201).json({ success: true, data: book });
   } catch (err) {
-    res.status(400).json({ success: false, message: err.message });
+    res.status(500).json({ success: false, message: err.message });
   }
 }

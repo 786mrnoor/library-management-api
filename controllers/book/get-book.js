@@ -5,8 +5,8 @@ export default async function getBookById(req, res) {
     const book = await BookModel.findById(req.params.id);
     if (!book)
       return res.status(404).json({ success: false, message: "Not found" });
-    res.json({ success: true, data: book });
+    res.status(200).json({ success: true, data: book });
   } catch (err) {
-    res.status(400).json({ success: false, message: err.message });
+    res.status(500).json({ success: false, message: err.message });
   }
 }
