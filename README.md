@@ -67,5 +67,6 @@ Server runs at: `http://localhost:5000`
 ## 📘 API Documentaions (Google Docs)
 
 - [Books API](https://docs.google.com/document/d/1bbE_FXzHPoozWPhzzzBd8L8TEtve7JQNbeF48o1MGWs/edit?usp=sharing)
+- [Authors API](https://docs.google.com/document/d/1tN-128y9_7kiAXV5UmXPjlyfdXIFZ2xL74Q8fxQug3A/edit?usp=sharing)
 
 ---

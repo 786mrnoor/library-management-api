@@ -3,6 +3,7 @@ import "dotenv/config";
 
 import connectDB from "./config/db.js";
 import booksRouter from "./routes/books-router.js";
+import authorRouter from "./routes/author-router.js";
 
 connectDB();
 
@@ -11,6 +12,7 @@ app.use(express.json());
 
 // Routes
 app.use("/books", booksRouter);
+app.use("/authors", authorRouter);
 
 app.use((req, res) =>
   res.status(404).json({ success: false, message: "Not found" })
