@@ -4,14 +4,14 @@ import removeFile from "../../utils/remove-file.js";
 export default async function uploadCover(req, res) {
   try {
     if (!req.file) {
-      return res.status(400).json({ error: "No file uploaded" });
+      return res.status(400).json({ error: true, message: "No file uploaded" });
     }
 
     const book = await BookModel.findById(req.params.id);
     if (!book) {
       // Delete the uploaded file
       removeFile(process.env.BOOK_UPLOAD_PATH + req.filepath);
-      return res.status(404).json({ error: "Book not found" });
+      return res.status(404).json({ error: true, message: "Book not found" });
     }
     if (book.coverImage) {
       removeFile(process.env.BOOK_UPLOAD_PATH + book.coverImage);

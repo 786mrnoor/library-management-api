@@ -52,6 +52,9 @@ Create a `.env` file in the root directory:
 ```
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/libraryDB
+JWT_SECRET=your_secret
+BOOK_UPLOAD_PATH=uploads/books/
+USER_UPLOAD_PATH=uploads/users/
 ```
 
 ### 4. Run the Server
@@ -68,5 +71,6 @@ Server runs at: `http://localhost:5000`
 
 - [Books API](https://docs.google.com/document/d/1bbE_FXzHPoozWPhzzzBd8L8TEtve7JQNbeF48o1MGWs/edit?usp=sharing)
 - [Authors API](https://docs.google.com/document/d/1tN-128y9_7kiAXV5UmXPjlyfdXIFZ2xL74Q8fxQug3A/edit?usp=sharing)
+- [Users API](https://docs.google.com/document/d/1GUtDdRTlgxIbJn8gcTl1TNb2ymRt0LZ3vsY1xJndR6A/edit?usp=sharing)
 
 ---
