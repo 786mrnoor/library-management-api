@@ -14,7 +14,7 @@ app.use(express.json());
 app.use("/books", booksRouter);
 app.use("/authors", authorRouter);
 
-app.use((req, res) =>
+app.use("/*splat", (req, res) =>
   res.status(404).json({ success: false, message: "Not found" })
 );
 

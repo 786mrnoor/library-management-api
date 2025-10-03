@@ -15,6 +15,7 @@ const bookSchema = new Schema(
       type: Number,
       min: [0, "Available copies must be greater than 0"],
     },
+    coverImage: String,
     publishedAt: { type: Date, default: Date.now() },
   },
   { timestamps: true }
