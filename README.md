@@ -72,5 +72,5 @@ Server runs at: `http://localhost:5000`
 - [Books API](https://docs.google.com/document/d/1bbE_FXzHPoozWPhzzzBd8L8TEtve7JQNbeF48o1MGWs/edit?usp=sharing)
 - [Authors API](https://docs.google.com/document/d/1tN-128y9_7kiAXV5UmXPjlyfdXIFZ2xL74Q8fxQug3A/edit?usp=sharing)
 - [Users API](https://docs.google.com/document/d/1GUtDdRTlgxIbJn8gcTl1TNb2ymRt0LZ3vsY1xJndR6A/edit?usp=sharing)
-
+- [Loan API](https://docs.google.com/document/d/1ThDKQV9IjvjNXv5mz8Xe8t9f8S-YsE-NqwNd2311528/edit?usp=sharing)
 ---
