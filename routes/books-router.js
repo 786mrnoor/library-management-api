@@ -6,6 +6,7 @@ import updateBook from "../controllers/book/update-book.js";
 import removeBook from "../controllers/book/remove-book.js";
 import uploadCover from "../controllers/book/upload-cover.js";
 import bookCoverImageMiddleware from "../middleware/book-cover-image-middleware.js";
+import authMiddleware from "../middleware/auth-middleware.js";
 
 const bookRouter = Router();
 
@@ -13,9 +14,9 @@ const bookRouter = Router();
 bookRouter
   .get("/", getBooks)
   .get("/:id", getBookById)
-  .post("/", addBook)
-  .put("/:id", updateBook)
-  .delete("/:id", removeBook)
-  .patch("/:id/upload-cover", bookCoverImageMiddleware, uploadCover);
+  .post("/", authMiddleware, addBook)
+  .put("/:id", authMiddleware, updateBook)
+  .delete("/:id", authMiddleware, removeBook)
+  .patch("/:id/upload-cover", authMiddleware, bookCoverImageMiddleware, uploadCover);
 
 export default bookRouter;
