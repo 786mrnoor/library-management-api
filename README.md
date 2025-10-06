@@ -51,7 +51,8 @@ Create a `.env` file in the root directory:
 
 ```
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/libraryDB
+MONGO_URI=mongodb+srv://<user_name>:<db_password>@zysmp.mongodb.net/?retryWrites=true&w=majority&appName=yourappname
+DB_NAME=librarydb
 JWT_SECRET=your_secret
 BOOK_UPLOAD_PATH=uploads/books/
 USER_UPLOAD_PATH=uploads/users/
