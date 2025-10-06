@@ -6,6 +6,7 @@ import booksRouter from "./routes/books-router.js";
 import authorRouter from "./routes/author-router.js";
 import userRouter from "./routes/user-router.js";
 import loanRouter from "./routes/loan-router.js";
+import reviewsRouter from "./routes/reviews-router.js";
 
 connectDB();
 
@@ -17,6 +18,7 @@ app.use("/books", booksRouter);
 app.use("/authors", authorRouter);
 app.use("/users", userRouter);
 app.use("/loans", loanRouter);
+app.use("/books", reviewsRouter);
 
 app.use("/*splat", (req, res) =>
   res.status(404).json({ success: false, message: "Not found" })

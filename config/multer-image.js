@@ -20,7 +20,7 @@ export default function multerImageUpload(destination) {
       if (file.mimetype.startsWith("image/")) {
         callback(null, true);
       } else {
-        callback(new Error("Only image files are allowed.)"), false);
+        callback(null, false);
       }
     },
   });
