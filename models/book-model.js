@@ -4,7 +4,6 @@ const bookSchema = new Schema(
   {
     title: { type: String, required: true, trim: true },
     author: { type: String, required: true },
-    coverUrl: String,
     price: {
       required: true,
       type: Number,
@@ -16,7 +15,7 @@ const bookSchema = new Schema(
       min: [0, "Available copies must be greater than 0"],
     },
     coverImage: String,
-    publishedAt: { type: Date, default: Date.now() },
+    publishedAt: { type: Date, default: Date.now },
   },
   { timestamps: true }
 );

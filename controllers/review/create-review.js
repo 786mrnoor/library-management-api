@@ -22,7 +22,7 @@ export default async function createReview(req, res) {
       comment
     });
     res.status(201).json({ success: true, data: review });
-  } catch (error) {
+  } catch (err) {
     res.status(500).json({ error: true, message: err.message });
   }
 };

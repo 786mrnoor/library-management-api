@@ -16,7 +16,7 @@ export default async function updateLoan(req, res) {
     });
     if (!loan) return res.status(404).json({ error: true, message: "Loan not found" });
     res.status(200).json({ success: true, data: loan });
-  } catch (error) {
+  } catch (err) {
     res.status(500).json({ error: true, message: err.message });
   }
 };

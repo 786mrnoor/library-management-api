@@ -4,6 +4,8 @@ A RESTful API built with **Node.js, Express.js, and MongoDB** for managing books
 
 Live Link: https://library-management-api-xsxh.onrender.com/
 
+Documentation and Diagram Link (Google drive): https://drive.google.com/drive/folders/1icL9U3XZZmJg7qHEqIhnu2hegJpD_MJn?usp=sharing
+
 ## 🛠 Tech Stack
 
 - **Backend Framework**: Node.js with Express.js
@@ -65,15 +67,5 @@ npm run dev
 ```
 
 Server runs at: `http://localhost:5000`
-
----
-
-## 📘 API Documentaions (Google Docs)
-
-- [Books API](https://docs.google.com/document/d/1bbE_FXzHPoozWPhzzzBd8L8TEtve7JQNbeF48o1MGWs/edit?usp=sharing)
-- [Authors API](https://docs.google.com/document/d/1tN-128y9_7kiAXV5UmXPjlyfdXIFZ2xL74Q8fxQug3A/edit?usp=sharing)
-- [Users API](https://docs.google.com/document/d/1GUtDdRTlgxIbJn8gcTl1TNb2ymRt0LZ3vsY1xJndR6A/edit?usp=sharing)
-- [Loans API](https://docs.google.com/document/d/1ThDKQV9IjvjNXv5mz8Xe8t9f8S-YsE-NqwNd2311528/edit?usp=sharing)
-- [Reviews API](https://docs.google.com/document/d/1Nor_rZN_lIc6HRTKLoo3REv9z49WPriQfiRvS7fiOgA/edit?usp=sharing)
 
 ---

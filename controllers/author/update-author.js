@@ -2,7 +2,7 @@ import AuthorModel from "../../models/author-model.js";
 
 export default async function updateAuthor(req, res) {
   try {
-    const author = await AuthorModel.findOneAndReplace(
+    const author = await AuthorModel.findOneAndUpdate(
       { _id: req.params.id },
       req.body,
       {

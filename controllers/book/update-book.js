@@ -2,7 +2,7 @@ import BookModel from "../../models/book-model.js";
 
 export default async function updateBook(req, res) {
   try {
-    const book = await BookModel.findOneAndReplace(
+    const book = await BookModel.findOneAndUpdate(
       { _id: req.params.id },
       req.body,
       {
